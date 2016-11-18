@@ -5,6 +5,9 @@
  * MIT Licensed
  */
 
-require('directory')(__dirname + '/lib/', function (fn, filename) {
-  module.exports[filename] = fn
-})
+// require('directory')(__dirname + '/lib/', function (fn, filename) {
+//   if (filename === 'timestamp') {
+//     module.exports[filename] = fn
+//   }
+// })
+exports.timestamp = require('./lib/timestamp')
